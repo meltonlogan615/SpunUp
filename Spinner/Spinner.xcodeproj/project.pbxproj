@@ -12,8 +12,6 @@
 		326035C7297DD87A00DD7EE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 326035C5297DD87A00DD7EE8 /* Main.storyboard */; };
 		326035C9297DD87B00DD7EE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 326035C8297DD87B00DD7EE8 /* Assets.xcassets */; };
 		326035CC297DD87B00DD7EE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 326035CA297DD87B00DD7EE8 /* LaunchScreen.storyboard */; };
-		326035F6297DD92E00DD7EE8 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326035F5297DD92E00DD7EE8 /* CircleView.swift */; };
-		326035F8297DDC6D00DD7EE8 /* CircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326035F7297DDC6D00DD7EE8 /* CircleViewModel.swift */; };
 		326035FF298041A700DD7EE8 /* UIView-Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326035FE298041A700DD7EE8 /* UIView-Rotation.swift */; };
 		328B749F2989435E00591769 /* SelectedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328B749E2989435E00591769 /* SelectedViewModel.swift */; };
 		328B74A82989B8BE00591769 /* techSelect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 328B74A12989B8BE00591769 /* techSelect.wav */; };
@@ -49,8 +47,6 @@
 		326035C8297DD87B00DD7EE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		326035CB297DD87B00DD7EE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		326035CD297DD87B00DD7EE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		326035F5297DD92E00DD7EE8 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
-		326035F7297DDC6D00DD7EE8 /* CircleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewModel.swift; sourceTree = "<group>"; };
 		326035FE298041A700DD7EE8 /* UIView-Rotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Rotation.swift"; sourceTree = "<group>"; };
 		328B749E2989435E00591769 /* SelectedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedViewModel.swift; sourceTree = "<group>"; };
 		328B74A12989B8BE00591769 /* techSelect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = techSelect.wav; sourceTree = "<group>"; };
@@ -89,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		320E3D8629AABAF100E9B3F6 /* SelectedViews */ = {
+			isa = PBXGroup;
+			children = (
+				32FB78112985B7F4002AC05B /* SelectedView.swift */,
+			);
+			name = SelectedViews;
+			sourceTree = "<group>";
+		};
 		326035B3297DD87A00DD7EE8 = {
 			isa = PBXGroup;
 			children = (
@@ -145,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				328B74B12989CA2A00591769 /* Wheel */,
-				326035F7297DDC6D00DD7EE8 /* CircleViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -153,10 +156,10 @@
 		326035F2297DD8B200DD7EE8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				320E3D8629AABAF100E9B3F6 /* SelectedViews */,
 				32FB781C29884FE5002AC05B /* UploadFileView */,
 				32FB77FF2982FD6A002AC05B /* WheelViews */,
 				326035F4297DD8C600DD7EE8 /* Storyboards */,
-				326035F5297DD92E00DD7EE8 /* CircleView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -166,9 +169,6 @@
 			children = (
 				32FB781B29884E81002AC05B /* Networking */,
 				32FB780429830822002AC05B /* WheelModels */,
-				32FB77FB2980CC5F002AC05B /* TestData.swift */,
-				32FB7802298307D6002AC05B /* WheelError.swift */,
-				32FB78002982FD7A002AC05B /* Slice.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -222,7 +222,6 @@
 			children = (
 				32FB77FD2982FD48002AC05B /* WheelView.swift */,
 				32FB780529830842002AC05B /* WheelSlice.swift */,
-				32FB78112985B7F4002AC05B /* SelectedView.swift */,
 			);
 			name = WheelViews;
 			sourceTree = "<group>";
@@ -230,6 +229,9 @@
 		32FB780429830822002AC05B /* WheelModels */ = {
 			isa = PBXGroup;
 			children = (
+				32FB77FB2980CC5F002AC05B /* TestData.swift */,
+				32FB78002982FD7A002AC05B /* Slice.swift */,
+				32FB7802298307D6002AC05B /* WheelError.swift */,
 			);
 			name = WheelModels;
 			sourceTree = "<group>";
@@ -336,7 +338,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				32FB781A29881704002AC05B /* WheelAnimation.swift in Sources */,
-				326035F6297DD92E00DD7EE8 /* CircleView.swift in Sources */,
 				32FB780A298481E5002AC05B /* CGFloat-ToRadians.swift in Sources */,
 				32FB78182987FAFB002AC05B /* UIView-Scale.swift in Sources */,
 				32FB7803298307D6002AC05B /* WheelError.swift in Sources */,
@@ -346,7 +347,6 @@
 				32FB782029886219002AC05B /* UploadFileViewController.swift in Sources */,
 				328B749F2989435E00591769 /* SelectedViewModel.swift in Sources */,
 				326035C2297DD87A00DD7EE8 /* SceneDelegate.swift in Sources */,
-				326035F8297DDC6D00DD7EE8 /* CircleViewModel.swift in Sources */,
 				32FB78122985B7F4002AC05B /* SelectedView.swift in Sources */,
 				32FB780829830936002AC05B /* WheelViewController.swift in Sources */,
 				32FB780D29859716002AC05B /* UIImage-WithUILabel.swift in Sources */,
