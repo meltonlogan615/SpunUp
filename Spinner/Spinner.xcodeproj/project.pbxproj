@@ -14,13 +14,6 @@
 		326035CC297DD87B00DD7EE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 326035CA297DD87B00DD7EE8 /* LaunchScreen.storyboard */; };
 		326035FF298041A700DD7EE8 /* UIView-Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326035FE298041A700DD7EE8 /* UIView-Rotation.swift */; };
 		328B749F2989435E00591769 /* SelectedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328B749E2989435E00591769 /* SelectedViewModel.swift */; };
-		328B74A82989B8BE00591769 /* techSelect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 328B74A12989B8BE00591769 /* techSelect.wav */; };
-		328B74A92989B8BE00591769 /* interface.wav in Resources */ = {isa = PBXBuildFile; fileRef = 328B74A22989B8BE00591769 /* interface.wav */; };
-		328B74AA2989B8BE00591769 /* softType.wav in Resources */ = {isa = PBXBuildFile; fileRef = 328B74A32989B8BE00591769 /* softType.wav */; };
-		328B74AB2989B8BE00591769 /* bubble.wav in Resources */ = {isa = PBXBuildFile; fileRef = 328B74A42989B8BE00591769 /* bubble.wav */; };
-		328B74AC2989B8BE00591769 /* hardType.wav in Resources */ = {isa = PBXBuildFile; fileRef = 328B74A52989B8BE00591769 /* hardType.wav */; };
-		328B74AD2989B8BE00591769 /* classic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 328B74A62989B8BE00591769 /* classic.wav */; };
-		328B74AE2989B8BE00591769 /* gateLatch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 328B74A72989B8BE00591769 /* gateLatch.wav */; };
 		32FB77FC2980CC5F002AC05B /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FB77FB2980CC5F002AC05B /* TestData.swift */; };
 		32FB77FE2982FD48002AC05B /* WheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FB77FD2982FD48002AC05B /* WheelView.swift */; };
 		32FB78012982FD7A002AC05B /* Slice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FB78002982FD7A002AC05B /* Slice.swift */; };
@@ -49,13 +42,6 @@
 		326035CD297DD87B00DD7EE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		326035FE298041A700DD7EE8 /* UIView-Rotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Rotation.swift"; sourceTree = "<group>"; };
 		328B749E2989435E00591769 /* SelectedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedViewModel.swift; sourceTree = "<group>"; };
-		328B74A12989B8BE00591769 /* techSelect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = techSelect.wav; sourceTree = "<group>"; };
-		328B74A22989B8BE00591769 /* interface.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = interface.wav; sourceTree = "<group>"; };
-		328B74A32989B8BE00591769 /* softType.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = softType.wav; sourceTree = "<group>"; };
-		328B74A42989B8BE00591769 /* bubble.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bubble.wav; sourceTree = "<group>"; };
-		328B74A52989B8BE00591769 /* hardType.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hardType.wav; sourceTree = "<group>"; };
-		328B74A62989B8BE00591769 /* classic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = classic.wav; sourceTree = "<group>"; };
-		328B74A72989B8BE00591769 /* gateLatch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gateLatch.wav; sourceTree = "<group>"; };
 		32FB77FB2980CC5F002AC05B /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		32FB77FD2982FD48002AC05B /* WheelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelView.swift; sourceTree = "<group>"; };
 		32FB78002982FD7A002AC05B /* Slice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slice.swift; sourceTree = "<group>"; };
@@ -126,7 +112,6 @@
 		326035EF297DD88700DD7EE8 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				328B74A02989B8A600591769 /* AudioAssets */,
 				326035BF297DD87A00DD7EE8 /* AppDelegate.swift */,
 				326035C1297DD87A00DD7EE8 /* SceneDelegate.swift */,
 				326035C8297DD87B00DD7EE8 /* Assets.xcassets */,
@@ -192,20 +177,6 @@
 				32FB78172987FAFB002AC05B /* UIView-Scale.swift */,
 			);
 			name = Extensions;
-			sourceTree = "<group>";
-		};
-		328B74A02989B8A600591769 /* AudioAssets */ = {
-			isa = PBXGroup;
-			children = (
-				328B74A42989B8BE00591769 /* bubble.wav */,
-				328B74A62989B8BE00591769 /* classic.wav */,
-				328B74A72989B8BE00591769 /* gateLatch.wav */,
-				328B74A52989B8BE00591769 /* hardType.wav */,
-				328B74A22989B8BE00591769 /* interface.wav */,
-				328B74A32989B8BE00591769 /* softType.wav */,
-				328B74A12989B8BE00591769 /* techSelect.wav */,
-			);
-			name = AudioAssets;
 			sourceTree = "<group>";
 		};
 		328B74B12989CA2A00591769 /* Wheel */ = {
@@ -317,15 +288,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				328B74AD2989B8BE00591769 /* classic.wav in Resources */,
 				326035CC297DD87B00DD7EE8 /* LaunchScreen.storyboard in Resources */,
-				328B74AC2989B8BE00591769 /* hardType.wav in Resources */,
 				326035C9297DD87B00DD7EE8 /* Assets.xcassets in Resources */,
-				328B74AA2989B8BE00591769 /* softType.wav in Resources */,
-				328B74A82989B8BE00591769 /* techSelect.wav in Resources */,
-				328B74AB2989B8BE00591769 /* bubble.wav in Resources */,
-				328B74A92989B8BE00591769 /* interface.wav in Resources */,
-				328B74AE2989B8BE00591769 /* gateLatch.wav in Resources */,
 				326035C7297DD87A00DD7EE8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
